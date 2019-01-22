@@ -63,7 +63,9 @@
 \usepackage{multirow}
 \usepackage{tikz}
 \usetikzlibrary{shapes,snakes}
+\usetikzlibrary{shapes.symbols,positioning}
 \usepackage{amsmath,amssymb}
+
 
 
 %\usepackage{graphicx}
@@ -186,10 +188,10 @@ basicstyle=\footnotesize\ttfamily}
 
 
 \tikzset{description title/.append style={
-    signal,
-    signal to=north,
-    signal from=south,
-    yshift=0.5cm,
+%    signal,
+%    signal to=south,
+%    signal from=nouth,
+    yshift=0.1cm,
   }
 }
 
@@ -218,6 +220,11 @@ basicstyle=\footnotesize\ttfamily}
 \colorlet{linecol}{blue!60}
 
 \definecolor{mynodecolor}{RGB}{198,191,234}
+
+
+\pgfkeys{/smart diagram/.cd,
+additions/.style={/smart diagram/additions/.cd,#1}%
+}
 
 
 
@@ -258,22 +265,39 @@ cf={TULIP Academy},
 \end{slide}
 %%
 %%==========================================================================================
-\section{Research Materials}
+
 %%==========================================================================================
 %%
-\begin{slide}[toc=,bm=]{Research Materials Management,Analysis}
+\begin{slide}[toc=,bm=]{Management, Analysis and Critical Thinking}
+\begin{center}
+\selectcolormodel{rgb} 
 
-\begin{itemize}
-  \item Management
-  \item Research Summary and Analysis
-  \begin{itemize}
-  \item Research Analysis
-  \item Research Summary
-  \end{itemize}
-  \item Critical Thinking
-\end{itemize}
+\smartdiagramset{description title text width=1.5cm,
+    description text width=7cm,description width=10cm}
+    
+\smartdiagram[descriptive diagram]{
+  {First,Research Materials Management}}
+\smartdiagram[descriptive diagram]{
+  {Second,Paper Summary and Analysis}}
+\smartdiagram[descriptive diagram]{
+  {Third,Critical Thinking}}
+\end{center}
+
+%\begin{itemize}
+%  \item Management
+%  \item Research Summary and Analysis
+%  \begin{itemize}
+%  \item Research Analysis
+%  \item Research Summary
+%  \end{itemize}
+%  \item Critical Thinking
+%\end{itemize}
+
+
 \end{slide}
 %%==========================================================================================
+
+\section{Research Materials}
 
 %%==========================================================================================
 %%
