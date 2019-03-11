@@ -235,7 +235,7 @@ additions/.style={/smart diagram/additions/.cd,#1}%
 % title
 % TODO: Customize to your Own Title, Name, Address
 %
-\title{Research Material Management and Critical Thinking}
+\title{Research Materials Management}
 \author{
 Meng Ren
 \\
@@ -251,7 +251,7 @@ Meng Ren
 rf=\href{http://www.tulip.org.au}{
 Last Changed by: \textsc{\gitCommitterName}\ \gitVtagn-\gitAbbrevHash\ (\gitAuthorDate)
 },
-cf={TULIP Academy},
+cf={Research Materials Management},
 }
 
 \begin{document}
@@ -308,7 +308,7 @@ There provide a way to search and collect the paper:
   \item Choose the relevant category.
   \item Choose the relevant Journal.
   \item Choose the paper and get DOI.
-  \item Download the paper from Sci-hub(\url{http://www.sci-hub.tw/})
+  \item Download the paper from Sci-hub (\url{http://www.sci-hub.tw/})
 \end{itemize}
 
 
@@ -321,7 +321,7 @@ There provide a way to search and collect the paper:
 \begin{slide}[toc=,bm=]{Information Acquisition}
 
 In general, we can acquire the information for \texttt{Blog}, \texttt{WeChat}, \texttt{ZhiHu,Quora},
-\texttt{Feedly}, \texttt{Reddit},\texttt{Twitter} and etc.
+\texttt{Feedly}, \texttt{Reddit}, \texttt{Twitter} and etc.
 
 %\begin{center}%
 \begin{figure}
@@ -362,11 +362,10 @@ Mendeley:
   \item Provides Mendeley for Android and iOS, with Mendeley Web, an online social network for researchers.
 \end{itemize}
 
-\textcolor{orange}{\href{https://www.zotero.org/}{\texttt{Zotero}}} is another free and open-source reference management software to manage bibliographic data and related research materials (such as PDF files).
-
 \end{slide}
 %%
 %%==========================================================================================
+
 
 %%==========================================================================================
 %%
@@ -396,6 +395,23 @@ rcolwidth=0.5\linewidth
 %%
 %%==========================================================================================
 
+%%==========================================================================================
+%%
+\begin{slide}[toc=,bm=]{PDF Management}
+
+\textcolor{orange}{\href{https://www.zotero.org/}{\texttt{Zotero}}} is another free and open-source reference management software to manage bibliographic data and related research materials.
+
+\begin{itemize}
+  \item \texttt{Zotero} Storage synchronizes \texttt{PDFs}, \texttt{images}, \texttt{web snapshots}, and any other Zotero files among all your computers, allows you to share your Zotero attachments in group libraries, and makes them available through the \texttt{zotero.org} website.
+  \vspace{0.3cm}
+  \item \texttt{Zotero} gives LaTeX users the option to export BibTeX files directly.
+  \vspace{0.3cm}
+  \item \textcolor{orange}{Better BibTex}: Automatically sync Zotero and BibTeX \url{https://retorque.re/zotero-better-bibtex/installation/}
+\end{itemize}
+
+\end{slide}
+%%
+%%==========================================================================================
 
 %%==========================================================================================
 %%
@@ -408,29 +424,44 @@ rcolwidth=0.5\linewidth
 %  \caption{Mendeley_Logo}
 \end{figure}
 
-\onslide*{2,2-}{
+\onslide*{2,3}{
 \begin{center}
 \large{\texttt{System Breakdown, Computer Damage, Lose the Document and etc.}}
 \end{center}
 }
 
 \onslide*{3}{In order to avoid the above problem,
-we choose Cross-Platform software in different Operating System,
+we choose Cross-Platform software in different operating system,
 such as:
 \begin{center}
 \textcolor{orange}{\texttt{Windows, OS X, Linux}}
 \end{center}
 }
 
-\onslide*{4,4-}{
+\onslide*{4}{
 \begin{itemize}
-  \item \textcolor{orange}{\textit{Baidu Drive}}: 2T free space, a Cloud service provided by \textit{Baidu}.
+  \item \textcolor{orange}{\textit{Baidu Drive}}: 2T free space, a cloud service provided by \textit{Baidu}.
       %It offers a cloud storage service, client software, file management, resources sharing, and Third Party Integration.
   \item \textcolor{orange}{\textit{OneDrive}}: 10G free space for PPTX and OneNote.
   \item \textcolor{orange}{\textit{GoogleDrive}}: 15G free space for Google edit document online. (VPN)
-  \item \textcolor{orange}{\textit{Bitbucket}}: Collaborative version control (Article writing).
+  \item \textcolor{orange}{\textit{Bitbucket}}: collaborative version control (Article writing).
   \item \textcolor{orange}{\textit{Github}}: a web-based hosting service for version control using Git.
 \end{itemize}
+}
+
+\onslide*{5,5-}{
+\begin{itemize}
+  \item There contains the content that has been fully researched and published in TULIP.
+%  \item \textcolor{orange}{\textit{Code}}
+    \begin{itemize}
+      \item \textit{TULIP Open-code}: \url{https://github.com/tulip-lab/open-code}
+    \end{itemize}
+%  \item \textcolor{orange}{\textit{Data in TULIP}}
+  \begin{itemize}
+    \item \textit{TULIP Open-data}: \url{https://github.com/tulip-lab/open-data}
+  \end{itemize}
+\end{itemize}
+
 }
 
 \end{slide}
@@ -450,26 +481,6 @@ rcolwidth=0.5\linewidth
 \begin{figure}
   \centering
   % Requires \usepackage{graphicx}
-  \includegraphics[width=2.3in]{figures/management/office.eps}\\
-  %\caption{Windows}
-\end{figure}
-
-\begin{itemize}
-  \item Microsoft Word: a word processor.
-  \item Microsoft Excel: a spreadsheet editor.
-  \item Microsoft PowerPoint: a presentation program.
-  \item Microsoft Access: a database management system.
-  \item \textcolor{orange}{Microsoft OneNote}: a notetaking program.
-%  \item Microsoft Publisher:  a desktop publishing app.
-  \item ...
-\end{itemize}
-
-}}
-{
-{\onslide*{2,2-}{
-\begin{figure}
-  \centering
-  % Requires \usepackage{graphicx}
   \includegraphics[width=2in]{figures/management/smartgit.eps}\\
   %\caption{Android}
 \end{figure}
@@ -482,6 +493,27 @@ rcolwidth=0.5\linewidth
   and intuitive local update,
   \textcolor{orange}{\texttt{submission}, \texttt{merge}, \texttt{refresh}},
   and \textcolor{orange}{\texttt{synchronization operations}}.
+\end{itemize}
+
+
+}}
+{
+{\onslide*{2,2-}{
+\begin{figure}
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=2.3in]{figures/management/office.eps}\\
+  %\caption{Windows}
+\end{figure}
+
+\begin{itemize}
+  \item Microsoft Word: a word processor.
+  \item Microsoft Excel: a spreadsheet editor.
+  \item Microsoft PowerPoint: a presentation program.
+  \item Microsoft Access: a database management system.
+  \item \textcolor{orange}{Microsoft OneNote}: a notetaking program.
+%  \item Microsoft Publisher:  a desktop publishing app.
+  \item ...
 \end{itemize}
 }
 }}
@@ -498,7 +530,7 @@ rcolwidth=0.5\linewidth
 \begin{slide}[toc=,bm=]{Research Summary and Analysis}
 
 \begin{itemize}
-  \item Paper can be divided into Two class:
+  \item Paper can be divided into Two classes:
   \begin{itemize}
     \item  \textcolor{orange}{\textit{Research}}: In response to new questions, propose new original theories, new evidence or new solutions (often a small research sub-question, just read the literature related to the research sub-question)
     \item  \textcolor{orange}{\textit{Survey}}: A retrospective paper that presents a variety of existing research findings and current status within the scope of a research topic. (Generally top or senior scholars.)
@@ -518,13 +550,21 @@ rcolwidth=0.5\linewidth
       \item Take a cursory look at the aiming paper and study \textcolor{orange}{the background knowledge} that you lack, and belong to the academic branch. Then find relevant literature to read.
       \item Pick out \textcolor{orange}{related chapters, pages, paragraphs} to read, and skip irrelevant content.
       \item After the background knowledge is added, look at the article that you need to read.
-      \begin{itemize}
-        \item Abstract
-        \item Introduction
-        \item Experiment
-        \item Method
-      \end{itemize}
+%      \begin{itemize}
+%        \item Abstract
+%        \item Introduction
+%        \item Experiment
+%        \item Method
+%      \end{itemize}
     \end{itemize}
+    \item Paper reading in TULIP: \textcolor{orange}{$1+5+10+20$}
+      \begin{itemize}
+        \item \textcolor{orange}{$1$}: A survey of excellent top conferences or journals.
+        \item \textcolor{orange}{$5$}: Based on $1$, select $5$ related papers.
+        \item \textcolor{orange}{$10$}: Based on $1$ and $5$, select $10$ related papers.
+        \item \textcolor{orange}{$20$}: Based on $1$, $5$ and $10$, select $20$ related papers.
+        \item At same time, collect the code and data about these papers.
+      \end{itemize}
 \end{itemize}
 \end{slide}
 %%
@@ -546,7 +586,7 @@ rcolwidth=0.5\linewidth
   \begin{itemize}
     \item \textcolor{orange}{\textit{Survey}}
 
-    \item \textcolor{orange}{\textit{Blog}}: \href{Blog}{https://mren.tulip.academy}
+    \item \textcolor{orange}{\textit{Blog}}: \url{https://mren.tulip.academy}
 
     \item \textcolor{orange}{\textit{Idea Bank}}: Reading Notes
 
@@ -576,8 +616,8 @@ rcolwidth=0.5\linewidth
     \item \textcolor{orange}{\textit{Research Survey}}
          \begin{itemize}
            \item A Survey is defined as a research method used for collecting data from a pre-defined group of respondents to \textcolor{orange}{gain information} and insights on \textcolor{orange}{various topics of interest}. Surveys have a variety of purposes and can be carried out in many ways depending on the \textcolor{orange}{methodology chosen} and the \textcolor{orange}{objectives} to be achieved.
-           \item It is often a long process to write a review of research papers. 
-           Literature review is often used to answer questions and doubts that you have raised, 
+           \item It is often a long process to write a review of research papers.
+           Literature review is often used to answer questions and doubts that you have raised,
            so that you can learn better.
          \end{itemize}
   \end{itemize}
@@ -603,7 +643,7 @@ rcolwidth=0.5\linewidth
 \begin{itemize}
     \item \textcolor{orange}{\textit{Blog}}
        \begin{itemize}
-         \item When we have a new understanding of a small research topic, 
+         \item When we have a new understanding of a small research topic,
          try to record it and give it. Because of that the more you summarize the more you gain.
        \end{itemize}
   \end{itemize}
@@ -621,8 +661,8 @@ rcolwidth=0.5\linewidth
     \item \textcolor{orange}{\textit{Idea Bank}}
       \begin{itemize}
         \item At any chance when read papers,
-        there can be a new idea, but it can't be completed immediately, 
-        you need to collect the idea. 
+        there can be a new idea, but it can't be completed immediately,
+        you need to collect the idea.
         When there is no research problem to do, you can go to the content collected before.
       \end{itemize}
   \end{itemize}
@@ -658,7 +698,7 @@ rcolwidth=0.5\linewidth
 \begin{slide}[toc=,bm=]{Critical Thinking}
 
 \begin{itemize}
-  \item Method and application comparison table: 
+  \item Method and application comparison table:
 \end{itemize}
 
 
@@ -706,14 +746,14 @@ In Method property table:
 \begin{slide}[toc=,bm=]{Critical Thinking}
 
 \begin{itemize}
-  \item According to the method and application comparison table, 
+  \item According to the method and application comparison table,
   select the appropriate method to determine the key to innovation and method.
   \item In-depth understanding of the operating principle and mechanism of read-only and methods.
   \item Organic transplantation to establish a complete ground floor ecology to support side effects.
 \end{itemize}
 
 \begin{center}
-\Large{\textit{To be an efficient man!}}
+\Large{\textit{Be Efficient!}}
 \end{center}
 
 \end{slide}
